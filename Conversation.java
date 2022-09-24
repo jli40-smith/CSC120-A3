@@ -7,8 +7,15 @@ public class Conversation {
       
       Scanner scan = new Scanner(System.in); 
       int conversationRounds = scan.nextInt();
-      System.out.println(conversationRounds);   
-
+      
+      for(int i = 0; i < conversationRounds; i++) {
+        System.out.println("Chat with me:"); 
+        
+        String userInput = scan.next(); 
+        userInput += scan.nextLine(); 
+        System.out.println(userInput); 
+      }
+      System.out.println("Goodbye!"); 
   }
 
 } 
