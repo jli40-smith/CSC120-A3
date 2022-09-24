@@ -9,13 +9,13 @@ public class Conversation {
       int conversationRounds = scan.nextInt();
       
       for(int i = 0; i < conversationRounds; i++) {
-        System.out.println("Chat with me:"); 
+        System.out.println("\nHi there! What's on your mind?\n"); 
         
         String userInput = scan.next(); 
         userInput += scan.nextLine(); 
         System.out.println(userInput); 
       }
-      System.out.println("Goodbye!"); 
+      System.out.println("\nIt was nice talking with you, Goodbye!\n"); 
   }
 
 } 
