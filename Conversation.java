@@ -19,7 +19,7 @@ public class Conversation {
         String userInput = scan.next(); 
         userInput += scan.nextLine(); 
 
-        String botResponse = sendCannedResponse(); //THIS IS WHERE TO ADD THE OUTPUT OF THE Mirror Words  
+        String botResponse = sendCannedResponse(); //
         System.out.println("\n" + botResponse); 
 
         transcript[i] = userInput + "\n" + botResponse; 
@@ -28,16 +28,13 @@ public class Conversation {
 
   }
 
-  public static void endConversation(String[] transcript) { 
-    System.out.println("\nIt was nice talking with you, Goodbye!\n"); 
-
-      System.out.println("***TRANSCRIPT***"); 
-      for(int i = 0; i < transcript.length; i++) {
-        System.out.println("\n" + transcript[i]);
-      }
-      System.out.println("\n***************");
+  public static String[] splitIntoWords(String userInput) {
+    String[] splitInput = userInput.split("", 0); 
+    return splitInput; 
   }
 
+
+  
   public static String sendCannedResponse() {
     String[] cannedResponses = {
       "Could you reword that?",
@@ -49,6 +46,17 @@ public class Conversation {
     Random random = new Random(); 
     int i = random.nextInt(cannedResponses.length); 
     return cannedResponses[i];  
+  }
+
+  
+  public static void endConversation(String[] transcript) { 
+    System.out.println("\nIt was nice talking with you, Goodbye!\n"); 
+
+      System.out.println("***TRANSCRIPT***"); 
+      for(int i = 0; i < transcript.length; i++) {
+        System.out.println("\n" + transcript[i]);
+      }
+      System.out.println("\n***************");
   }
 
 } 
