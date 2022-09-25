@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Conversation {
   public static void main(String[] args) {
@@ -10,7 +10,8 @@ public class Conversation {
       Scanner scan = new Scanner(System.in); 
       int conversationRounds = scan.nextInt();
       
-      ArrayList<String> transcript =  new ArrayList<String>();
+      String[] transcript = new String[conversationRounds * 2];
+      Arrays.fill(transcript, "");
 
       for(int i = 0; i < conversationRounds; i++) {
         System.out.println("\nHi there! What's on your mind?\n"); 
@@ -18,19 +19,18 @@ public class Conversation {
         String userInput = scan.next(); 
         userInput += scan.nextLine(); 
 
-        String botResponse = userInput; 
-
-        transcript.add(userInput); 
-        transcript.add(botResponse); 
-
+        String botResponse = userInput + "-Bot"; 
         System.out.println("\n" + botResponse); 
+
+        transcript[i] = userInput; 
+        transcript[i + 1] = botResponse; 
       }
       System.out.println("\nIt was nice talking with you, Goodbye!\n"); 
 
       System.out.println("***TRANSCRIPT***");
 
-      for(int i = 0; i < transcript.size(); i++) {
-        System.out.println("\n" + transcript.get(i));
+      for(int i = 0; i < transcript.length; i++) {
+        System.out.println("\n" + transcript[i]);
       }
 
       System.out.println("\n***************");

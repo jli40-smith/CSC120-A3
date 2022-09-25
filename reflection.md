@@ -14,5 +14,6 @@ Use this file to record your reflection on this assignment.
 
 - What worked, what didn't, what advice would you give someone taking this course in the future?
 
-SOURCES USED: 
+SOURCES COUNSULTED: 
 https://www.w3schools.com/java/java_arraylist.asp
+https://stackoverflow.com/questions/14446539/an-elegant-way-of-initialising-an-empty-string-array-in-java
