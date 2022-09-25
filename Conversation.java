@@ -1,4 +1,7 @@
-import java.util.Scanner; 
+import java.util.Scanner;
+
+import javax.swing.plaf.basic.BasicBorders.SplitPaneBorder;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -19,7 +22,7 @@ public class Conversation {
         String userInput = scan.next(); 
         userInput += scan.nextLine(); 
 
-        String botResponse = sendCannedResponse(); //
+        String botResponse = sendCannedResponse(); //RUN THE RESPOND method here later! 
         System.out.println("\n" + botResponse); 
 
         transcript[i] = userInput + "\n" + botResponse; 
@@ -29,12 +32,27 @@ public class Conversation {
   }
 
   public static String[] splitIntoWords(String userInput) {
-    String[] splitInput = userInput.split("", 0); 
+    String[] splitInput = userInput.split(" ", 0); 
     return splitInput; 
   }
 
+/* 
+  public static String[] mirrorWords(String[] splitInput) {
+    for (int i = 0; i < splitInput.length; i++) {
+      if (splitInput[i].equals("I")) {
+        splitInput[i] = "you"; 
+      }
 
-  
+    }
+
+    for (int i = 0; i < splitInput.length; i++) {
+      String[] mirroredSentence = new String[splitInput.length]; 
+
+    }
+
+  }
+*/  
+
   public static String sendCannedResponse() {
     String[] cannedResponses = {
       "Could you reword that?",
