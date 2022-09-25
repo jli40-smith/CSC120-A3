@@ -24,6 +24,7 @@ To see how to make an empty String array https://stackoverflow.com/questions/144
 To review basics of if/else, for loops, scanning strings, main class in java, etc. 
 https://www.youtube.com/c/AlexLeeYT/videos (Various videos)
 
-To find code that selects a random String out of a String array 
+To find code that selects a random String out of a String array, doubled checked with Java Documentation
 https://stackoverflow.com/questions/21726033/picking-a-random-item-from-an-array-of-strings-in-java
+https://docs.oracle.com/javase/8/docs/api/java/util/Random.html
 
