@@ -1,7 +1,4 @@
 import java.util.Scanner;
-
-import javax.swing.plaf.basic.BasicBorders.SplitPaneBorder;
-
 import java.util.Arrays;
 import java.util.Random;
 
@@ -22,7 +19,8 @@ public class Conversation {
         String userInput = scan.next(); 
         userInput += scan.nextLine(); 
 
-        String botResponse = sendCannedResponse(); //RUN THE RESPOND method here later! 
+
+        String botResponse = mirrorWords(splitIntoWords(userInput)); //RUN THE RESPOND method here later! 
         System.out.println("\n" + botResponse); 
 
         transcript[i] = userInput + "\n" + botResponse; 
@@ -36,22 +34,49 @@ public class Conversation {
     return splitInput; 
   }
 
-/* 
-  public static String[] mirrorWords(String[] splitInput) {
+  public static String mirrorWords(String[] splitInput) {
     for (int i = 0; i < splitInput.length; i++) {
-      if (splitInput[i].equals("I")) {
+
+      if (splitInput[i].equals("I") ||
+          splitInput[i].equals("i") ||
+          splitInput[i].equals("Me") ||
+          splitInput[i].equals("me")) {
         splitInput[i] = "you"; 
       }
 
+      if (splitInput[i].equals("You")) {
+        splitInput[i] = "I"; 
+      }
+
+      if (splitInput[i].equals("Am")) {
+        splitInput[i] = "are"; 
+      }
+      
+      if (splitInput[i].equals("Are")) {
+        splitInput[i] = "am"; 
+      }
+      
+      if (splitInput[i].equals("My")) {
+        splitInput[i] = "your"; 
+      }
+
+      if (splitInput[i].equals("Your")) {
+        splitInput[i] = "my"; 
+      }
+
     }
-
-    for (int i = 0; i < splitInput.length; i++) {
-      String[] mirroredSentence = new String[splitInput.length]; 
-
-    }
-
+    String mirroredSentence = String.join(" ", splitInput); 
+    return mirroredSentence; 
   }
-*/  
+
+/* 
+  public static String findAndReplace(String input, String find, String replace) {
+    if (input.equals(find)) {
+      input = replace; 
+      return input; 
+    }
+  }
+*/
 
   public static String sendCannedResponse() {
     String[] cannedResponses = {
