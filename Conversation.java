@@ -17,17 +17,17 @@ public class Conversation {
       Scanner scan = new Scanner(System.in); 
       int conversationRounds = scan.nextInt();
       
-      String[] transcript = new String[conversationRounds];
+      String[] transcript = new String[conversationRounds]; //Source [1]
       Arrays.fill(transcript, "");
 
       System.out.println("\nHi there! What's on your mind?\n");
 
       for(int i = 0; i < conversationRounds; i++) { 
         
-        String userInput = scan.next(); 
+        String userInput = scan.next(); //Source [4]
         userInput += scan.nextLine(); 
 
-        String botResponse = mirrorWords(splitIntoWords(userInput)); //RUN THE RESPOND method here later! 
+        String botResponse = mirrorWords(splitIntoWords(userInput)); 
         
         if(botResponse.equals(userInput)) {
           botResponse = selectCannedResponse(); 
@@ -83,7 +83,7 @@ public class Conversation {
     }
 
     String mirroredSentence = String.join(" ", splitInput); 
-    mirroredSentence = mirroredSentence.substring(0, 1).toUpperCase() + mirroredSentence.substring(1);
+    mirroredSentence = mirroredSentence.substring(0, 1).toUpperCase() + mirroredSentence.substring(1); //Source [3]
     return mirroredSentence; 
 
   }
@@ -100,7 +100,7 @@ public class Conversation {
       "Please elaborate on that!", 
       "Tell me even more!"
     };
-
+/* Source [2] */
     Random random = new Random(); 
     int i = random.nextInt(cannedResponses.length); 
     return cannedResponses[i];  
