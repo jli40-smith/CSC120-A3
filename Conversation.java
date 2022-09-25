@@ -42,31 +42,32 @@ public class Conversation {
           splitInput[i].equals("Me") ||
           splitInput[i].equals("me")) {
         splitInput[i] = "you"; 
-      }
-
-      if (splitInput[i].equals("You")) {
+      
+      } else if (splitInput[i].equals("You") ||
+          splitInput[i].equals("you")) {
         splitInput[i] = "I"; 
-      }
-
-      if (splitInput[i].equals("Am")) {
+      
+      } else if (splitInput[i].equals("Am") ||
+          splitInput[i].equals("am")) {
         splitInput[i] = "are"; 
-      }
       
-      if (splitInput[i].equals("Are")) {
+      } else if (splitInput[i].equals("Are") ||
+          splitInput[i].equals("are")) {
         splitInput[i] = "am"; 
-      }
       
-      if (splitInput[i].equals("My")) {
+      } else if (splitInput[i].equals("My") ||
+          splitInput[i].equals("my")) {
         splitInput[i] = "your"; 
-      }
-
-      if (splitInput[i].equals("Your")) {
+      
+      }else if (splitInput[i].equals("Your") ||
+          splitInput[i].equals("your")) {
         splitInput[i] = "my"; 
       }
-
     }
+
     String mirroredSentence = String.join(" ", splitInput); 
     return mirroredSentence; 
+    
   }
 
 /* 

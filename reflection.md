@@ -1,7 +1,7 @@
 Use this file to record your reflection on this assignment.
 
 - Which classmates did you consult with while working on this assignment?
-I consulted with Zoe Plumridge, Katie W :D
+I consulted with Zoe Plumridge, Katie W, Jialu (Lucy) Guo
 
 - Which session(s) of TA / office hours did you attend?
 I went to the 7PM to 9PM session on Tuesday (9/20) to work out a problem with junit which was keeping me from starting the warmup assignment. 
