@@ -20,10 +20,11 @@ public class Conversation {
         userInput += scan.nextLine(); 
 
         String botResponse = userInput + "-Bot"; 
-        System.out.println("\n" + botResponse); 
-
         transcript[i] = userInput; 
-        transcript[i + 1] = botResponse; 
+
+        System.out.println("\n" + botResponse); 
+        transcript[i+1] = botResponse;
+
       }
       System.out.println("\nIt was nice talking with you, Goodbye!\n"); 
 
