@@ -21,14 +21,19 @@ public class Conversation {
         String botResponse = userInput; 
 
         transcript.add(userInput); 
-        transcript.add()
+        transcript.add(botResponse); 
 
-        System.out.println(botResponse); 
+        System.out.println("\n" + botResponse); 
       }
       System.out.println("\nIt was nice talking with you, Goodbye!\n"); 
-      System.out.println("********CONVERSATION TRANSCRIPT********");
-  
-      System.out.println(transcript);
+
+      System.out.println("***TRANSCRIPT***");
+
+      for(int i = 0; i < transcript.size(); i++) {
+        System.out.println("\n" + transcript.get(i));
+      }
+
+      System.out.println("\n***************");
   }
 
 } 
