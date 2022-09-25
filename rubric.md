@@ -12,7 +12,7 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 ### Level 1 (4 pts)
 
-_____ 1 pt: `reflection.md` lists the classmates you consulted & TA hours attended
+**YES** 1 pt: `reflection.md` lists the classmates you consulted & TA hours attended
 
 **YES** 1 pt: Program queries user for number of conversation rounds
 
@@ -24,7 +24,7 @@ _____ 1 pt: `reflection.md` lists the classmates you consulted & TA hours attend
 
 _____ 1 pt: Uses a canned response when no mirror words detected
 
-_____ 1 pt: Detects the requested set of mirror words (at minimum)
+**YES** 1 pt: Detects the requested set of mirror words (at minimum)
 
 _____ 1 pt: Replaces simple mirror words appropriately (unpunctuated, lowercase)
 
@@ -32,9 +32,9 @@ _____ 1 pt: Replaces simple mirror words appropriately (unpunctuated, lowercase)
 
 _____ 1 pt: Makes all appropriate mirror replacements
 
-_____ 1 pt: Stores transcript of the conversation in an array
+**YES** 1 pt: Stores transcript of the conversation in an array
 
-_____ 1 pt: Prints transcript when terminating
+**YES** 1 pt: Prints transcript when terminating
 
 ## Kudos:
 

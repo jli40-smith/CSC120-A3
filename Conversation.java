@@ -13,8 +13,9 @@ public class Conversation {
       String[] transcript = new String[conversationRounds];
       Arrays.fill(transcript, "");
 
-      for(int i = 0; i < conversationRounds; i++) {
-        System.out.println("\nHi there! What's on your mind?\n"); 
+      System.out.println("\nHi there! What's on your mind?\n");
+      
+      for(int i = 0; i < conversationRounds; i++) { 
         
         String userInput = scan.next(); 
         userInput += scan.nextLine(); 
@@ -67,7 +68,7 @@ public class Conversation {
 
     String mirroredSentence = String.join(" ", splitInput); 
     return mirroredSentence; 
-    
+
   }
 
 /* 
