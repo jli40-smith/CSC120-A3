@@ -26,6 +26,7 @@ public class Conversation {
 
         transcript[i] = userInput + "\n" + botResponse; 
       }
+      
       endConversation(transcript);
 
   }
@@ -72,11 +73,11 @@ public class Conversation {
   }
 
 /* 
-  public static String findAndReplace(String input, String find, String replace) {
-    if (input.equals(find)) {
-      input = replace; 
-      return input; 
-    }
+  public static String replaceMatch(String word, String match, String replacement) {
+    if (word.equals(match)) {
+      word = replacement; 
+    } 
+    return word; 
   }
 */
 
