@@ -18,7 +18,7 @@ _____ 1 pt: `reflection.md` lists the classmates you consulted & TA hours attend
 
 **YES** 1 pt: Program carries out requested number of conversation rounds
 
-_____ 1 pt: Allocates static array of canned responses
+**YES** 1 pt: Allocates static array of canned responses
 
 ### Level 2 (3 pts)
 

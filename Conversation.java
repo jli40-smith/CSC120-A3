@@ -1,6 +1,6 @@
 import java.util.Scanner; 
-
 import java.util.Arrays;
+import java.util.Random;
 
 public class Conversation {
   public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class Conversation {
         String userInput = scan.next(); 
         userInput += scan.nextLine(); 
 
-        String botResponse = userInput + "-Bot"; //THIS IS WHERE TO ADD THE OUTPUT OF THE Mirror Words  
+        String botResponse = sendCannedResponse(); //THIS IS WHERE TO ADD THE OUTPUT OF THE Mirror Words  
         System.out.println("\n" + botResponse); 
 
         transcript[i] = userInput + "\n" + botResponse; 
@@ -39,9 +39,16 @@ public class Conversation {
   }
 
   public static String sendCannedResponse() {
-    String[] cannedResponses = {"Could you reword that?", "I'm not sure I'm understanding you", "Please elaborate on that!", "Tell me even more!"}
-    
-    return String botResponse; 
+    String[] cannedResponses = {
+      "Could you reword that?",
+      "I'm not sure I'm understanding you", 
+      "Please elaborate on that!", 
+      "Tell me even more!"
+    };
+
+    Random random = new Random(); 
+    int i = random.nextInt(cannedResponses.length); 
+    return cannedResponses[i];  
   }
 
 } 
