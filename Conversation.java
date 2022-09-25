@@ -20,13 +20,12 @@ public class Conversation {
         String userInput = scan.next(); 
         userInput += scan.nextLine(); 
 
-
         String botResponse = mirrorWords(splitIntoWords(userInput)); //RUN THE RESPOND method here later! 
         System.out.println("\n" + botResponse + "\n"); 
 
         transcript[i] = userInput + "\n" + botResponse; 
       }
-
+      scan.close();
       endConversation(transcript);
 
   }
