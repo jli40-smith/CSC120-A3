@@ -13,3 +13,6 @@ Use this file to record your reflection on this assignment.
     I might conclude that programming 
 
 - What worked, what didn't, what advice would you give someone taking this course in the future?
+
+SOURCES USED: 
+https://www.w3schools.com/java/java_arraylist.asp
