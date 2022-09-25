@@ -21,6 +21,11 @@ public class Conversation {
         userInput += scan.nextLine(); 
 
         String botResponse = mirrorWords(splitIntoWords(userInput)); //RUN THE RESPOND method here later! 
+        
+        if(botResponse.equals(userInput)) {
+          botResponse = selectCannedResponse(); 
+        }
+
         System.out.println("\n" + botResponse + "\n"); 
 
         transcript[i] = userInput + "\n" + botResponse; 
@@ -80,7 +85,7 @@ public class Conversation {
   }
 */
 
-  public static String sendCannedResponse() {
+  public static String selectCannedResponse() {
     String[] cannedResponses = {
       "Could you reword that?",
       "I'm not sure I'm understanding you", 
