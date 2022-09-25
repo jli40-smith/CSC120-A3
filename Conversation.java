@@ -2,7 +2,14 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Random;
 
+/**
+ * 
+ */
 public class Conversation {
+  /**
+   * 
+   * @param args
+   */
   public static void main(String[] args) {
     // You will start the conversation here 
       System.out.println("How many rounds of conversation would you like?"); 
@@ -35,55 +42,56 @@ public class Conversation {
 
   }
 
+/**
+ * 
+ * @param userInput
+ * @return
+ */
   public static String[] splitIntoWords(String userInput) {
+    userInput = userInput.toLowerCase(); 
     String[] splitInput = userInput.split(" ", 0); 
     return splitInput; 
   }
 
+/**
+ * 
+ * @param splitInput
+ * @return
+ */
   public static String mirrorWords(String[] splitInput) {
     for (int i = 0; i < splitInput.length; i++) {
 
-      if (splitInput[i].equals("I") ||
-          splitInput[i].equals("i") ||
-          splitInput[i].equals("Me") ||
+      if (splitInput[i].equals("i") ||
           splitInput[i].equals("me")) {
         splitInput[i] = "you"; 
       
-      } else if (splitInput[i].equals("You") ||
-          splitInput[i].equals("you")) {
+      } else if (splitInput[i].equals("you")) {
         splitInput[i] = "I"; 
       
-      } else if (splitInput[i].equals("Am") ||
-          splitInput[i].equals("am")) {
+      } else if (splitInput[i].equals("am")) {
         splitInput[i] = "are"; 
       
-      } else if (splitInput[i].equals("Are") ||
-          splitInput[i].equals("are")) {
+      } else if (splitInput[i].equals("are")) {
         splitInput[i] = "am"; 
       
-      } else if (splitInput[i].equals("My") ||
-          splitInput[i].equals("my")) {
+      } else if (splitInput[i].equals("my")) {
         splitInput[i] = "your"; 
       
-      }else if (splitInput[i].equals("Your") ||
-          splitInput[i].equals("your")) {
+      }else if (splitInput[i].equals("your")) {
         splitInput[i] = "my"; 
       }
     }
 
     String mirroredSentence = String.join(" ", splitInput); 
+    mirroredSentence = mirroredSentence.substring(0, 1).toUpperCase() + mirroredSentence.substring(1);
     return mirroredSentence; 
 
   }
 
-/* 
-  public static String replaceMatch(String word, String match, String replacement) {
-    if (word.equals(match)) {
-      word = replacement; 
-    } 
-    return word; 
-  }
-*/
+/**
+ * 
+ * @return
+ */
 
   public static String selectCannedResponse() {
     String[] cannedResponses = {
@@ -98,7 +106,11 @@ public class Conversation {
     return cannedResponses[i];  
   }
 
-  
+/**
+ * 
+ * @param transcript
+ */
+
   public static void endConversation(String[] transcript) { 
     System.out.println("\nIt was nice talking with you, Goodbye!\n"); 
 
