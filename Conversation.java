@@ -26,7 +26,7 @@ public class Conversation {
 
         transcript[i] = userInput + "\n" + botResponse; 
       }
-      
+
       endConversation(transcript);
 
   }
