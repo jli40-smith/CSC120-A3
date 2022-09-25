@@ -14,7 +14,7 @@ public class Conversation {
       Arrays.fill(transcript, "");
 
       System.out.println("\nHi there! What's on your mind?\n");
-      
+
       for(int i = 0; i < conversationRounds; i++) { 
         
         String userInput = scan.next(); 
@@ -22,7 +22,7 @@ public class Conversation {
 
 
         String botResponse = mirrorWords(splitIntoWords(userInput)); //RUN THE RESPOND method here later! 
-        System.out.println("\n" + botResponse); 
+        System.out.println("\n" + botResponse + "\n"); 
 
         transcript[i] = userInput + "\n" + botResponse; 
       }
