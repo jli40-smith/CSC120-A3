@@ -29,7 +29,7 @@ public class Conversation {
 
         String botResponse = mirrorWords(splitIntoWords(userInput)); 
         
-        if(botResponse.equals(userInput)) {
+        if(botResponse.equalsIgnoreCase(userInput)) {
           botResponse = selectCannedResponse(); 
         }
     
@@ -87,7 +87,8 @@ public class Conversation {
     }
     
     String mirroredSentence = String.join(" ", splitInput); 
-    
+    mirroredSentence = mirroredSentence.substring(0, 1).toUpperCase() + mirroredSentence.substring(1); //Source [3]
+
     return mirroredSentence; 
 
   }
@@ -101,8 +102,7 @@ public class Conversation {
     String[] cannedResponses = {
       "Could you reword that?",
       "I'm not sure I'm understanding you", 
-      "Please elaborate on that!", 
-      "If you don't stop spewing nonsense, I'll feel tempted to end our conversation early", 
+      "Please elaborate on that!",
       "Please speak in proper sentences!", 
       "Tell me even more!"
     };
