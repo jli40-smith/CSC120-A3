@@ -2,9 +2,11 @@ Use this file to record your reflection on this assignment.
 
 - Which classmates did you consult with while working on this assignment?
 I consulted with Zoe Plumridge, Katie Wilson, Kathleen Bacigalupi, Jialu (Lucy) Guo (is not done with assignment yet)
+They lead me to verify that the code was not parroting the user with an if statement instead of with s.contains().
 
 - Which session(s) of TA / office hours did you attend?
 I went to the 7PM to 9PM session on Tuesday (9/20) to work out a problem with junit which was keeping me from starting the warmup assignment (It might also have been Wednesday 9/21 if my memory was incorrect). I also went to the 1-3PM TA hours on Sunday, 9/25 (certain, this time!).
+The TA helped me see that I could convert userInput to all lowercase, and then make the first letter uppercase to catch capitalized words for mirroring, and produce a final sentence which is capitalized.  
 
 - What are your initial impressions of Java? 
 The syntax is hard to learn and more fussy than Python, but it has many similarities with Python that I can rely on to help with my code. I think that once I got used to it, it became easier to distinguish code blocks via braces and semicolons rather than with white space. Java forced me to really understand what "counted as" individual statements or code blocks on a logical level. In Python, I guessed where to indent and hoped for the best since whitespaces indicated code blocks. I had to be more intentional with indenting to Java to make my code 
