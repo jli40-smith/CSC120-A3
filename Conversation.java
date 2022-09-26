@@ -29,11 +29,10 @@ public class Conversation {
 
         String botResponse = mirrorWords(splitIntoWords(userInput)); 
         
-        if(botResponse.equals(userInput) ||
-           botResponse.equals((userInput).substring(0, 1).toUpperCase() + botResponse.substring(1))) {
+        if(botResponse.equals(userInput)) {
           botResponse = selectCannedResponse(); 
         }
-      
+    
         System.out.println("\n" + botResponse + "\n"); 
 
         transcript[i] = userInput + "\n" + botResponse; 
@@ -88,7 +87,6 @@ public class Conversation {
     }
     
     String mirroredSentence = String.join(" ", splitInput); 
-    mirroredSentence = mirroredSentence.substring(0, 1).toUpperCase() + mirroredSentence.substring(1);
     
     return mirroredSentence; 
 
@@ -105,7 +103,7 @@ public class Conversation {
       "I'm not sure I'm understanding you", 
       "Please elaborate on that!", 
       "If you don't stop spewing nonsense, I'll feel tempted to end our conversation early", 
-      "You're Tearing Me Apart, Lisa!", 
+      "Please speak in proper sentences!", 
       "Tell me even more!"
     };
 /* Source [2] */

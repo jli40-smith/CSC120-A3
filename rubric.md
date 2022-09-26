@@ -40,7 +40,7 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 **NO*** (Kudos!) Handles mirror words with punctuation
 
-**PART** (Kudos!) Generates output with correct punctuation & capitalization
+**NO** (Kudos!) Generates output with correct punctuation & capitalization
 
 **PART** (Kudos!) Handles you --> me/I dilemma
 
