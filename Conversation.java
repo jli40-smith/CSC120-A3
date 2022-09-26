@@ -3,15 +3,22 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
+ * Receives and responds to user-inputted Strings
  * 
+ * @author Joanna Li 
  */
 public class Conversation {
   /**
+   * Queries user for the number of inputs desired and prints
+   * canned or mirrored responses after each round of user input.
    * 
-   * @param args
+   * Adds dialogue to a transcript of the conversation printed when method terminates.
+   * 
+   * The number of inputs requested should be an integer.
+   * 
+   * @param args String array with command-line arguments
    */
   public static void main(String[] args) {
-    // You will start the conversation here 
       System.out.println("How many rounds of conversation would you like?"); 
       
       Scanner scan = new Scanner(System.in); 
@@ -29,7 +36,7 @@ public class Conversation {
 
         String botResponse = mirrorWords(splitIntoWords(userInput)); 
         
-        if(botResponse.equalsIgnoreCase(userInput)) {
+        if (botResponse.equalsIgnoreCase(userInput)) {
           botResponse = selectCannedResponse(); 
         }
     
@@ -45,9 +52,11 @@ public class Conversation {
   }
 
 /**
+ * Splits sections of user input separated by whitespace
+ * into individual strings stored in a String array 
  * 
- * @param userInput
- * @return
+ * @param userInput String user types into the console 
+ * @return String array with split-up sections of user input
  */
   public static String[] splitIntoWords(String userInput) {
     userInput = userInput.toLowerCase(); 
@@ -56,16 +65,18 @@ public class Conversation {
   }
 
 /**
+ * Replaces selected strings in splitInput with "mirrored" String replacements
  * 
- * @param splitInput
- * @return
+ * @param splitInput String array from which element is compared to "mirrorable" words and replaced with 
+ * "mirrored" replacements if a match is found
+ * @return String produced by concatenating the Strings from splitInput after replacements are made
  */
   public static String mirrorWords(String[] splitInput) {
     for (int i = 0; i < splitInput.length; i++) {
 
       if (splitInput[i].equals("i") ||
           splitInput[i].equals("me")) {
-        splitInput[i] = "you"; 
+            splitInput[i] = "you"; 
       
       } else if (splitInput[i].equals("you")) {
         splitInput[i] = "I"; 
@@ -82,9 +93,10 @@ public class Conversation {
       }else if (splitInput[i].equals("your")) {
         splitInput[i] = "my"; 
       }
+
     }
     
-    if(splitInput[splitInput.length - 1].equals("I")) {
+    if (splitInput[splitInput.length - 1].equals("I")) {
        splitInput[splitInput.length - 1] = "me"; 
     }
     
@@ -96,8 +108,9 @@ public class Conversation {
   }
 
 /**
+ * Randomly selects and returns a canned response String
  * 
- * @return
+ * @return String representing canned conversation response
  */
 
   public static String selectCannedResponse() {
@@ -116,8 +129,9 @@ public class Conversation {
   }
 
 /**
+ * Prints transcript of conversation
  * 
- * @param transcript
+ * @param transcript []
  */
 
   public static void endConversation(String[] transcript) { 
