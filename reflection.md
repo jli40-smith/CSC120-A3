@@ -1,12 +1,12 @@
 Use this file to record your reflection on this assignment.
 
 - Which classmates did you consult with while working on this assignment?
-I consulted with Zoe Plumridge, Katie Wilson, Kathleen Bacigalupi, Jialu (Lucy) Guo (is not done with assignment yet)
-They lead me to verify that the code was not parroting the user with an if statement instead of with s.contains().
+I consulted with Zoe Plumridge, Katie Wilson, Kathleen Bacigalupi, Jialu (Lucy) Guo (is not done with assignment yet, will not submit)
+They lead me to verify that the code was not parroting the user with an if statement instead of with s.contains(). 
 
 - Which session(s) of TA / office hours did you attend?
 I went to the 7PM to 9PM session on Tuesday (9/20) to work out a problem with junit which was keeping me from starting the warmup assignment (It might also have been Wednesday 9/21 if my memory was incorrect). I also went to the 1-3PM TA hours on Sunday, 9/25 (certain, this time!).
-The TA helped me see that I could convert userInput to all lowercase, and then make the first letter uppercase to catch capitalized words for mirroring, and produce a final sentence which is capitalized.  
+The TA helped me see that I could convert userInput to all lowercase, and then make the first letter uppercase to catch capitalized words for mirroring, and produce a final sentence which is capitalized. However, I did not use this capitalization code in the end, since it introduced other problems into the code. A TA also explained javadoc to me and helped me start them in the correct place in the code. 
 
 - What are your initial impressions of Java? 
 The syntax is hard to learn and more fussy than Python, but it has many similarities with Python that I can rely on to help with my code. I think that once I got used to it, it became easier to distinguish code blocks via braces and semicolons rather than with white space. Java forced me to really understand what "counted as" individual statements or code blocks on a logical level. In Python, I guessed where to indent and hoped for the best since whitespaces indicated code blocks. I had to be more intentional with indenting to Java to make my code 
@@ -26,8 +26,7 @@ languages to do different tasks. It seems both interesting and intimidating, but
 - What worked, what didn't, what advice would you give someone taking this course in the future?
 What worked was that I was able to write Java code that ran properly, and set aside time to watch additional Java tutorials on Youtube 
 so that I understood Java syntax and the use of for loops, if/else statements, the main method, and other parts of Java.
-I was also able to get help with reducing the length and improving the organization of my code from speaking with TAs and other students. 
-I got a good idea for implementing the canned response and for mirroring words. 
+I was also able to get help with reducing the length and improving the organization of my code from speaking with TAs and other students. I got a good idea for implementing the canned response and for mirroring words. 
 
 What did not work was that I could not reduce the repetitiveness of the word replacement method I created (mirrorWords()) by writing another method for replacing words (How would it work with the if/else logic?), and I could not think of a fool proof way to resolve the I/me problem other than replacing the final "I" in a string with "me." I also did  not finish with enough time to work on all the Kudos elements of the assignment, and I may have had time if I started this homework earlier. 
 

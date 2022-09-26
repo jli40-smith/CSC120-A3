@@ -49,7 +49,7 @@ public class Conversation {
  */
   public static String[] splitIntoWords(String userInput) {
     userInput = userInput.toLowerCase(); 
-    String[] splitInput = userInput.split(" ", 0); 
+    String[] splitInput = userInput.split(" ", -1); 
     return splitInput; 
   }
 
@@ -104,6 +104,7 @@ public class Conversation {
       "I'm not sure I'm understanding you", 
       "Please elaborate on that!",
       "Please speak in proper sentences!", 
+      "Mmhm",
       "Tell me even more!"
     };
 /* Source [2] */
@@ -124,6 +125,7 @@ public class Conversation {
       for(int i = 0; i < transcript.length; i++) {
         System.out.println("\n" + transcript[i]);
       }
+      System.out.println("\nIt was nice talking with you, Goodbye!");
       System.out.println("\n***************");
   }
 
