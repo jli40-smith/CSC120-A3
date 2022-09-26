@@ -40,7 +40,7 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 **NO*** (Kudos!) Handles mirror words with punctuation
 
-**PART** (Kudos!) Generates output with correct punctuation & capitalization
+**NO** (Kudos!) Generates output with correct punctuation & capitalization
 
 **PART** (Kudos!) Handles you --> me/I dilemma
 
@@ -62,7 +62,7 @@ _____ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       _____ Methods & variables all have clear and accurate names
 
-      _____ Methods avoid confusing side effects
+      **YES** Methods avoid confusing side effects
 
 **YES** 1 pt: All required files included with submission (including completed checklist file)
 

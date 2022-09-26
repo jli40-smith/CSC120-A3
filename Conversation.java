@@ -17,7 +17,7 @@ public class Conversation {
       Scanner scan = new Scanner(System.in); 
       int conversationRounds = scan.nextInt();
       
-      String[] transcript = new String[conversationRounds]; //Source [1]
+      String[] transcript = new String[conversationRounds + 1]; //Source [1]
       Arrays.fill(transcript, "");
 
       System.out.println("\nHi there! What's on your mind?\n");
@@ -37,6 +37,8 @@ public class Conversation {
 
         transcript[i] = userInput + "\n" + botResponse; 
       }
+
+      transcript[conversationRounds] = "It was nice talking with you, Goodbye!"; 
       scan.close();
       endConversation(transcript);
 
@@ -121,12 +123,14 @@ public class Conversation {
   public static void endConversation(String[] transcript) { 
     System.out.println("\nIt was nice talking with you, Goodbye!\n"); 
 
-      System.out.println("***TRANSCRIPT***"); 
+    System.out.println("***TRANSCRIPT***"); 
+
       for(int i = 0; i < transcript.length; i++) {
         System.out.println("\n" + transcript[i]);
       }
-      System.out.println("\nIt was nice talking with you, Goodbye!");
-      System.out.println("\n***************");
+      
+    System.out.println("\n***************");
+
   }
 
 } 
