@@ -40,6 +40,4 @@ I would advise any taking this course to review Java syntax before starting CSC-
 
 [2] https://stackoverflow.com/questions/21726033/picking-a-random-item-from-an-array-of-strings-in-java
 
-[3] https://stackoverflow.com/questions/3904579/how-to-capitalize-the-first-letter-of-a-string-in-java
-
-[4] https://www.youtube.com/watch?v=Wgkb0zg7WOM
+[3] https://www.youtube.com/watch?v=Wgkb0zg7WOM
