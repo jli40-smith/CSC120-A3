@@ -81,7 +81,11 @@ public class Conversation {
         splitInput[i] = "my"; 
       }
     }
-
+    
+    if(splitInput[splitInput.length - 1].equals("I")) {
+       splitInput[splitInput.length - 1] = "me"; 
+    }
+    
     String mirroredSentence = String.join(" ", splitInput); 
     mirroredSentence = mirroredSentence.substring(0, 1).toUpperCase() + mirroredSentence.substring(1); //Source [3]
     return mirroredSentence; 

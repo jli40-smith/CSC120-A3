@@ -38,11 +38,11 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 ## Kudos:
 
-_____ (Kudos!) Handles mirror words with punctuation
+**NO*** (Kudos!) Handles mirror words with punctuation
 
 **PART** (Kudos!) Generates output with correct punctuation & capitalization
 
-_____ (Kudos!) Handles you --> me/I dilemma
+**PART** (Kudos!) Handles you --> me/I dilemma
 
 
 
@@ -64,6 +64,6 @@ _____ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       _____ Methods avoid confusing side effects
 
-_____ 1 pt: All required files included with submission (including completed checklist file)
+**YES** 1 pt: All required files included with submission (including completed checklist file)
 
-_____ 1 pt: `reflection.md` contains your reflection on the assignment
+**YES** 1 pt: `reflection.md` contains your reflection on the assignment
