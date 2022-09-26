@@ -24,7 +24,7 @@ public class Conversation {
 
       for(int i = 0; i < conversationRounds; i++) { 
         
-        String userInput = scan.next(); //Source [4]
+        String userInput = scan.next(); //Source [3]
         userInput += scan.nextLine(); 
 
         String botResponse = mirrorWords(splitIntoWords(userInput)); 
@@ -87,7 +87,7 @@ public class Conversation {
     }
     
     String mirroredSentence = String.join(" ", splitInput); 
-    mirroredSentence = mirroredSentence.substring(0, 1).toUpperCase() + mirroredSentence.substring(1); //Source [3]
+    
 
     return mirroredSentence; 
 
