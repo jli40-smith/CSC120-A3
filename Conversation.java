@@ -20,21 +20,20 @@ public class Conversation {
    */
   public static void main(String[] args) {
       System.out.println("How many rounds of conversation would you like?"); 
+      Scanner scan = new Scanner(System.in);
       
-      Scanner scan = new Scanner(System.in); 
       int conversationRounds = scan.nextInt();
       
       String[] transcript = new String[conversationRounds + 1]; //Source [1]
-      Arrays.fill(transcript, "");
 
+      Arrays.fill(transcript, "");
       System.out.println("\nHi there! What's on your mind?\n");
 
       for(int i = 0; i < conversationRounds; i++) { 
-        
         String userInput = scan.next(); //Source [3]
-        userInput += scan.nextLine(); 
+        userInput += scan.nextLine();
 
-        String botResponse = mirrorWords(splitIntoWords(userInput)); 
+        String botResponse = mirrorWords(splitIntoWords(userInput));
         
         if (botResponse.equalsIgnoreCase(userInput)) {
           botResponse = selectCannedResponse(); 
@@ -45,7 +44,8 @@ public class Conversation {
         transcript[i] = userInput + "\n" + botResponse; 
       }
 
-      transcript[conversationRounds] = "It was nice talking with you, Goodbye!"; 
+      transcript[conversationRounds] = "It was nice talking with you, Goodbye!";
+
       scan.close();
       endConversation(transcript);
 
@@ -60,6 +60,7 @@ public class Conversation {
  */
   public static String[] splitIntoWords(String userInput) {
     userInput = userInput.toLowerCase(); 
+
     String[] splitInput = userInput.split(" ", -1); 
     return splitInput; 
   }
@@ -101,7 +102,6 @@ public class Conversation {
     }
     
     String mirroredSentence = String.join(" ", splitInput); 
-    
 
     return mirroredSentence; 
 
@@ -122,9 +122,11 @@ public class Conversation {
       "Mmhm",
       "Tell me even more!"
     };
-/* Source [2] */
-    Random random = new Random(); 
+
+    Random random = new Random(); //Source [2]
+    
     int i = random.nextInt(cannedResponses.length); 
+    
     return cannedResponses[i];  
   }
 
@@ -136,7 +138,6 @@ public class Conversation {
 
   public static void endConversation(String[] transcript) { 
     System.out.println("\nIt was nice talking with you, Goodbye!\n"); 
-
     System.out.println("***TRANSCRIPT***"); 
 
       for(int i = 0; i < transcript.length; i++) {
@@ -147,4 +148,4 @@ public class Conversation {
 
   }
 
-} 
+}
