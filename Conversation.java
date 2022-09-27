@@ -9,10 +9,10 @@ import java.util.Random;
  */
 public class Conversation {
   /**
-   * Queries user for the number of inputs desired and prints
-   * canned or mirrored responses after each round of user input.
+   * Queries user for the rounds of conversation desired and 
+   * prints canned or mirrored responses to user input.
    * 
-   * Adds dialogue to a transcript of the conversation printed when method terminates.
+   * Adds dialogue to a transcript of the conversation which is printed when method terminates.
    * 
    * The number of inputs requested should be an integer.
    * 
@@ -53,10 +53,10 @@ public class Conversation {
 
 /**
  * Splits sections of user input separated by whitespace
- * into individual strings stored in a String array 
+ * into individual strings
  * 
- * @param userInput String user types into the console 
- * @return String array with split-up sections of user input
+ * @param userInput String that user types into the console
+ * @return String array storing split-up sections of user input
  */
   public static String[] splitIntoWords(String userInput) {
     userInput = userInput.toLowerCase(); 
@@ -65,11 +65,11 @@ public class Conversation {
   }
 
 /**
- * Replaces selected strings in splitInput with "mirrored" String replacements
+ * Replaces selected strings with "mirrored" String replacements
  * 
- * @param splitInput String array from which element is compared to "mirrorable" words and replaced with 
+ * @param splitInput String array for which String element is compared to "mirrorable" words and replaced with 
  * "mirrored" replacements if a match is found
- * @return String produced by concatenating the Strings from splitInput after replacements are made
+ * @return String produced by joining the elements of splitInput with whitespace in between
  */
   public static String mirrorWords(String[] splitInput) {
     for (int i = 0; i < splitInput.length; i++) {
@@ -110,7 +110,7 @@ public class Conversation {
 /**
  * Randomly selects and returns a canned response String
  * 
- * @return String representing canned conversation response
+ * @return String representing a canned conversation response
  */
 
   public static String selectCannedResponse() {
@@ -131,7 +131,7 @@ public class Conversation {
 /**
  * Prints transcript of conversation
  * 
- * @param transcript []
+ * @param transcript [] String array containing rounds of conversation dialogue 
  */
 
   public static void endConversation(String[] transcript) { 
