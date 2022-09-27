@@ -3,9 +3,11 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * Receives and responds to user-inputted Strings
+ * Receives and responds to user-inputted Strings for set number of rounds.
+ * Records and prints a transcript of the dialogue.
  * 
  * @author Joanna Li 
+ * @see #main(String[])
  */
 public class Conversation {
   /**
